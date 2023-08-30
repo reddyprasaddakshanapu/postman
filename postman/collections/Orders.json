@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "fa9413db-7ded-4c06-b165-bfbbf0dfc4e8",
+		"_postman_id": "d42685fe-6449-41e3-ab7f-bc52ce3b70b1",
 		"name": "Orders",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "29421735-fa9413db-7ded-4c06-b165-bfbbf0dfc4e8"
+		"_uid": "29421735-d42685fe-6449-41e3-ab7f-bc52ce3b70b1"
 	},
 	"item": [
 		{
@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "Sample endpoint: Returns details about a particular user . Hello world. Added more text. This is another change",
-					"id": "8272141a-7477-4d59-9215-216eb360a228",
+					"id": "eb4329cc-71d9-4f3d-892c-d3faf7d3127e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -42,7 +42,7 @@
 					},
 					"response": [
 						{
-							"id": "0fe50d75-0805-43e4-9efc-42bf3d81533e",
+							"id": "79dad983-dbe4-4a0c-bf02-b3cb4b235800",
 							"name": "Sample response: Details about a user by ID",
 							"originalRequest": {
 								"method": "GET",
@@ -72,6 +72,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -91,7 +92,7 @@
 							"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"tag\": \"<string>\"\n}"
 						},
 						{
-							"id": "574faf52-9e32-4e13-aba3-794051edac2c",
+							"id": "0aa3efc3-b6f2-4239-9562-e86b38cdf261",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -121,6 +122,7 @@
 							"status": "Internal Server Error",
 							"code": 500,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -133,7 +135,7 @@
 					]
 				}
 			],
-			"id": "39da4edf-39a1-49c7-9819-9882b5aef4cb"
+			"id": "a2bcb882-8527-4375-9f8b-0261699175d8"
 		}
 	],
 	"auth": {
