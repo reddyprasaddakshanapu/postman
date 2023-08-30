@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "fa9413db-7ded-4c06-b165-bfbbf0dfc4e8",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "29421735-fa9413db-7ded-4c06-b165-bfbbf0dfc4e8"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "Sample endpoint: Returns details about a particular user . Hello world. Added more text. This is another change",
+					"id": "8272141a-7477-4d59-9215-216eb360a228",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user?id=<integer>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"description": "(Required) ID of the user",
+									"key": "id",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "0fe50d75-0805-43e4-9efc-42bf3d81533e",
+							"name": "Sample response: Details about a user by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/user?id=<integer>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user"
+									],
+									"query": [
+										{
+											"description": "(Required) ID of the user",
+											"key": "id",
+											"value": "<integer>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"disabled": false,
+									"description": {
+										"content": "A link to the next page of responses",
+										"type": "text/plain"
+									},
+									"key": "x-next",
+									"value": "<string>"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"tag\": \"<string>\"\n}"
+						},
+						{
+							"id": "574faf52-9e32-4e13-aba3-794051edac2c",
+							"name": "Unexpected error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/user?id=<integer>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user"
+									],
+									"query": [
+										{
+											"description": "(Required) ID of the user",
+											"key": "id",
+											"value": "<integer>"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"code\": \"<integer>\",\n  \"message\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "39da4edf-39a1-49c7-9819-9882b5aef4cb"
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "{{basicAuthUsername}}",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{basicAuthPassword}}",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "d1c7e440-a360-4abe-8907-0c7c6455f628",
+			"key": "baseUrl",
+			"value": "localhost:3000"
+		}
+	]
+}
