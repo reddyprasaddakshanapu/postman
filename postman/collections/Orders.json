@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "d42685fe-6449-41e3-ab7f-bc52ce3b70b1",
+		"_postman_id": "22c28cc2-e69a-42d8-a6b8-0abafc7880b3",
 		"name": "Orders",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "29421735-d42685fe-6449-41e3-ab7f-bc52ce3b70b1"
+		"_uid": "29421735-22c28cc2-e69a-42d8-a6b8-0abafc7880b3"
 	},
 	"item": [
 		{
@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "Sample endpoint: Returns details about a particular user . Hello world. Added more text. This is another change",
-					"id": "eb4329cc-71d9-4f3d-892c-d3faf7d3127e",
+					"id": "f45b6d33-855f-4c30-87c8-ff65829e0fd0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -42,7 +42,7 @@
 					},
 					"response": [
 						{
-							"id": "79dad983-dbe4-4a0c-bf02-b3cb4b235800",
+							"id": "6b53af48-e829-4543-8368-c0de9e40ddb4",
 							"name": "Sample response: Details about a user by ID",
 							"originalRequest": {
 								"method": "GET",
@@ -92,7 +92,7 @@
 							"body": "{\n  \"id\": \"<long>\",\n  \"name\": \"<string>\",\n  \"tag\": \"<string>\"\n}"
 						},
 						{
-							"id": "0aa3efc3-b6f2-4239-9562-e86b38cdf261",
+							"id": "cd8b41ef-8cc9-4bbc-8432-2d7cfdbdf009",
 							"name": "Unexpected error",
 							"originalRequest": {
 								"method": "GET",
@@ -135,7 +135,7 @@
 					]
 				}
 			],
-			"id": "a2bcb882-8527-4375-9f8b-0261699175d8"
+			"id": "d8d46f14-8885-4a03-9713-cf4a9c60fe01"
 		}
 	],
 	"auth": {
