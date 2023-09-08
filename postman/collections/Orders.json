@@ -11,6 +11,20 @@
 			"item": [
 				{
 					"name": "Sample endpoint: Returns details about a particular user . Hello world. Added more text. This is another change",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9cccf5aa-4daf-4e59-9b33-0c1674e8986e",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "f45b6d33-855f-4c30-87c8-ff65829e0fd0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -33,9 +47,9 @@
 							],
 							"query": [
 								{
-									"description": "(Required) ID of the user",
 									"key": "id",
-									"value": "<integer>"
+									"value": "<integer>",
+									"description": "(Required) ID of the user"
 								}
 							]
 						}
@@ -72,7 +86,6 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -122,7 +135,6 @@
 							"status": "Internal Server Error",
 							"code": 500,
 							"_postman_previewlanguage": "json",
-							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
